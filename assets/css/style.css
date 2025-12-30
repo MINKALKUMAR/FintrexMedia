@@ -16227,6 +16227,7 @@ section#ourmagazines {
   width: 90%;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   text-align: center;
+  border: 5px solid #ff0000;
 }
 
 .banner-img {
@@ -16236,8 +16237,8 @@ section#ourmagazines {
 
 .banner-close {
   position: absolute;
-  top: 10px;
-  right: -14px;
+  top: 0px;
+  right: -35px;
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;

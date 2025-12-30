@@ -1152,14 +1152,11 @@
   let bannerTimer;
 
   window.addEventListener("load", function () {
-    const isDesktop = window.innerWidth >= 768;
-    const bannerClosed = localStorage.getItem("desktop_banner_closed");
-
-    if (isDesktop && !bannerClosed) {
+    if (window.innerWidth >= 768) {
       const banner = document.getElementById("desktopBanner");
       banner.style.display = "flex";
 
-      // ✅ Auto close after 5 seconds
+      // Auto close after 5 seconds
       bannerTimer = setTimeout(() => {
         closeBanner();
       }, 10000);
@@ -1167,15 +1164,14 @@
   });
 
   function closeBanner() {
-    localStorage.setItem("desktop_banner_closed", "true");
     document.getElementById("desktopBanner").style.display = "none";
 
-    // Clear timer if user closes manually
     if (bannerTimer) {
       clearTimeout(bannerTimer);
     }
   }
 </script>
+
 
     <script src="assets/js/modernizr.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
