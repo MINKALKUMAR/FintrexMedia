@@ -16205,3 +16205,41 @@ section#ourmagazines {
     padding: 11px;
 }
 /*----------------------------------------------------------------------------------------------*/
+
+
+
+.desktop-banner {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-box {
+  position: relative;
+  background: #ffffff;
+  /* padding: 10px; */
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.banner-close {
+  position: absolute;
+  top: 10px;
+  right: -14px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ff0000;
+}
